@@ -2,7 +2,7 @@
 
 
 <% @bands.each do |band| %>
-	<h3> <%= band.name %></h3>
+	<h3> <a href="bands/<%=band.id%>"><%= band.name%></a>  </h3>
 	<h5>Genre: <%= band.genre %></h5>
 	<h5>Explicit: <%=band.explicit_lyrics %></h5>
   <a href="/bands/<%= band.id%>/edit">Edit Band</a>
