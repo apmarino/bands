@@ -10,7 +10,7 @@ class BandsController < ApplicationController
 
   def create
     Band.create(band_params)
-    redirect_to band_path
+    redirect_to bands_path
   end
 
   def show
