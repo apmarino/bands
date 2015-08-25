@@ -5,7 +5,7 @@ class BandsController < ApplicationController
   end
   
   def new
-    @band = Bands.new
+    @band = Band.new
   end
 
   def create
