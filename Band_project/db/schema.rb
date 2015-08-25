@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150825184159) do
+ActiveRecord::Schema.define(version: 20150825190833) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,14 +22,22 @@ ActiveRecord::Schema.define(version: 20150825184159) do
     t.boolean  "explicit_lyrics"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.integer  "venue_id"
   end
+
+  add_index "bands", ["venue_id"], name: "index_bands_on_venue_id", using: :btree
 
   create_table "events", force: :cascade do |t|
     t.string   "date"
     t.boolean  "alcohol_served"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.integer  "band_id"
+    t.integer  "venue_id"
   end
+
+  add_index "events", ["band_id"], name: "index_events_on_band_id", using: :btree
+  add_index "events", ["venue_id"], name: "index_events_on_venue_id", using: :btree
 
   create_table "venues", force: :cascade do |t|
     t.string   "name"
@@ -40,4 +48,7 @@ ActiveRecord::Schema.define(version: 20150825184159) do
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "bands", "venues"
+  add_foreign_key "events", "bands"
+  add_foreign_key "events", "venues"
 end
