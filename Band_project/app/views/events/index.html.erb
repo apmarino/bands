@@ -1,12 +1,13 @@
-<title>Events</title>
+<h1>Events</h1>
 
-<% events.each do |event| %>
+<% @events.each do |event| %>
 
-<h1>	<%= event.date %></h1>
-<h3>	Alcohol Served:<%= event.alcolhol_served %> </h3>
+<h3>Date:	<%= event.date %></h3>
+<h5>Band: <%= event.band.name %></h5>
+<h5>Venue: <%= event.venue.name %></h5>
+<h5>Alcohol Served: <%= event.alcohol_served %> </h5>
+<a href="/events/<%= event.id %>">See Event</a>
 	<br>
-	<%	bands.each do |band| %>
-	<h4><%= band.name %></h4>
+	
 	<%end%>
 	<br><br>
-<%end%>
