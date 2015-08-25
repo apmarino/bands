@@ -23,9 +23,9 @@ band4 = Band.create({name:"The Zombies", genre:"rock", explicit_lyrics:false, ve
 band5 = Band.create({name:"Bon Jovi", genre:"rock", explicit_lyrics:false, venue_id: venue3.id})
 
 
-event1 = Event.create({date:"2015-8-27", alcohol_served: true, band_id: band1.id, venue_id: venue1.id})
-event2 = Event.create({date:"2015-9-10", alcohol_served: true, band_id: band2.id, venue_id: venue2.id})
-event3 = Event.create({date:"2015-9-14", alcohol_served: true, band_id: band3.id, venue_id: venue1.id})
+event1 = Event.create({date:"2015-08-27", alcohol_served: true, band_id: band1.id, venue_id: venue1.id})
+event2 = Event.create({date:"2015-09-10", alcohol_served: true, band_id: band2.id, venue_id: venue2.id})
+event3 = Event.create({date:"2015-09-14", alcohol_served: true, band_id: band3.id, venue_id: venue1.id})
 event4 = Event.create({date:"2015-10-21", alcohol_served: true, band_id: band4.id, venue_id: venue2.id})
 event4 = Event.create({date:"2015-10-21", alcohol_served: true, band_id: band5.id, venue_id: venue3.id})
 

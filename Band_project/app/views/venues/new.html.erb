@@ -1,9 +1,10 @@
-
-<%= form_for @venue do |f| %>
-	<%= f.text_field :name, placeholder: 'Venue Name' %><br>
-	<%= f.text_field :city, placeholder: 'City' %><br>
-	<%= f.text_field :state, placeholder: 'State' %><br>
-  <%= f.label :family_friendly, 'Family Friendly?' %>
-  <%= f.check_box :family_friendly %><br>
-<%= f.submit %>
-<%end%>
+<div class="new">
+  <%= form_for @venue do |f| %>
+  	<%= f.text_field :name, placeholder: 'Venue Name' %><br>
+  	<%= f.text_field :city, placeholder: 'City' %><br>
+  	<%= f.text_field :state, placeholder: 'State' %><br>
+    <%= f.label :family_friendly, 'Family Friendly?', class:"check" %>
+    <%= f.check_box :family_friendly %><br>
+    <%= f.submit class:"submit"%>
+  <%end%>
+</div>
