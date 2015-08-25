@@ -5,8 +5,16 @@
 	<h3>Explicit: <%=@band.explicit_lyrics %></h3>
 
 	<h5>Upcoming Event Dates:</h5>
+<<<<<<< HEAD
 		<% Event.includes(:bands).where(:bands => {band_id: @band.id}).all %>
 			<% @bands.each do |band| %>
 				<%= band.event.date %>
 			<% end %>
 	
+=======
+  <% @event.date.each do |d| %>
+    <p>Date: <%=event.date%></p>
+    <p>Alcohol Served? <%=event.alcohol_served %></p>
+
+  <% end %>
+>>>>>>> 981a26be28260bf7b520d70762cbff7089e836e3

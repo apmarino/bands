@@ -33,7 +33,7 @@ class EventsController < ApplicationController
     event.destroy
     redirect_to events_path
   end
-
+  
   private
   def event_params
     params.require(:event).permit(:date, :alcohol_served, :venue_id, :band_id)

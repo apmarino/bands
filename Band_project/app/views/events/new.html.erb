@@ -1,5 +1,5 @@
 <%= form_for @event do |f| %>
-  <%= f.text_field :date, placeholder: 'mm/dd/yyyy' %><br>
+  <%= f.date_field :date%><br>
   <%= f.label :alcohol_served, "Alcohol Served?"%> 
   <%= f.check_box :alcohol_served%> <br>
   <%= f.collection_select :venue_id, Venue.all, :id, :name %>
