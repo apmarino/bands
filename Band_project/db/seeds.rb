@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Venue.delete_all
+Even.delete_all
+Band.delete_all
+
+venue = Venue.create({name:"House of Yes", city:"New York", state:"NJ", family_friendly:false})
+
+event = Event.create({date:"8/27/2015", alcohol_served: true})
+
+band = Band.create({name:"Objects", genre:"rock", explicit_lyrics:false})
+

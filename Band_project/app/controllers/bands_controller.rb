@@ -1,2 +1,3 @@
 class BandsController < ApplicationController
+  
 end
