@@ -5,3 +5,10 @@
 <%= link_to "Edit this", edit_venue_path %>
 <br>
 <%= link_to "Create new Event", new_event_path %>
+
+	<% @events.each do |event| %>
+		<%= event.date %>
+		<%= event.band.name%>
+
+		<br>
+	<% end %>
