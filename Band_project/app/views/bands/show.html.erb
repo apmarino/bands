@@ -1,12 +1,12 @@
-	
+	require('pry')
 
 	<h1> <%= @band.name %></h1>
 	<h3>Genre: <%= @band.genre %></h3>
 	<h3>Explicit: <%=@band.explicit_lyrics %></h3>
 
 	<h5>Upcoming Event Dates:</h5>
-<<<<<<< HEAD
-		
-=======
+		<% Event.includes(:bands).where(:bands => {band_id: @band.id}).all %>
+			<% @bands.each do |band| %>
+				<%= band.event.date %>
+			<% end %>
 	
->>>>>>> 1352b2f64e34bc3ba0c3784d5f5881bf7f538e37
