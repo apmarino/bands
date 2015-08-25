@@ -1,0 +1,6 @@
+<%= form_for @event do |f| %>
+  <%= f.text_field :date, placeholder: 'mm/dd/yyyy' %><br>
+  <%= f.label :alcohol_served, "Alcohol Served?"%> 
+  <%= f.check_box :alcohol_served%> <br>
+  <%= f.submit %>
+<% end %>

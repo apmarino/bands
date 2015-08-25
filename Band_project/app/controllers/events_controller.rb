@@ -6,6 +6,7 @@ class EventsController < ApplicationController
   
   def new
     @event = Event.new
+     params[:remember_me] = true
   end
 
   def create
