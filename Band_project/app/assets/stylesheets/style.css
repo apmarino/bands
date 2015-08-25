@@ -5,7 +5,18 @@
   padding: 5%;
   font-family: 'Philosopher', sans-serif;
   font-size: 1.7em;
+  color: white;
   background-color: rgba(34,36,42,0.85);
+}
+.submit{
+  background-color: rgb(9, 136, 209);
+  font-size: 0.8em;
+}
+.submit:hover{
+  background-color: rgb(3, 76, 119);
+}
+.check{
+  color: white;
 }
 
 body{

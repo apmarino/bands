@@ -1,13 +1,13 @@
 
-	<h1> <%= @band.name %></h1>
-	<h3>Genre: <%= @band.genre %></h3>
-	<h3>Explicit: <%=@band.explicit_lyrics %></h3>
+	<h2> <%= @band.name %></h2>
+	<h5>Genre: <%= @band.genre %></h5>
+	<h5>Explicit: <%=@band.explicit_lyrics %></h5>
 <br>
-	<h5>Upcoming Event Dates:</h5>
+	<h4>Upcoming Event Dates:</h4>
 		<hr>
-			<% @events.each do |event| %>
-				<%= event.date %>
-				<%= event.venue.name%>
-				<br><hr>
+			<% @events.each do |event| %> 
+			<h5>	<%= event.date %> </h5>
+			<h5>	<%= event.venue.name%> </h5>
+				<hr>
 			<% end %>
 	

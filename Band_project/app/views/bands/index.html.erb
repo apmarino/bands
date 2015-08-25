@@ -1,4 +1,4 @@
-<h1>Bands</h1>
+<h1>Bands</h1><hr>
 
 
 <% @bands.each do |band| %>
@@ -6,4 +6,5 @@
 	<h5>Genre: <%= band.genre %></h5>
 	<h5>Explicit: <%=band.explicit_lyrics %></h5>
   <a href="/bands/<%= band.id%>/edit">Edit Band</a>
+  <hr>
 <%end%>
