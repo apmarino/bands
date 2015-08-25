@@ -7,8 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Venue.delete_all
-Event.delete_all
 Band.delete_all
+Event.delete_all
 
 venue = Venue.create({name:"House of Yes", city:"New York", state:"NJ", family_friendly:false})
 
