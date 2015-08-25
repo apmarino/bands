@@ -12,7 +12,7 @@ Band.delete_all
 
 venue = Venue.create({name:"House of Yes", city:"New York", state:"NJ", family_friendly:false})
 
-event = Event.create({date:"8/27/2015", alcohol_served: true})
+event = Event.create({date:"8/27/2015", alcohol_served: true, venue_id:1, band_id:1})
 
-band = Band.create({name:"Objects", genre:"rock", explicit_lyrics:false})
+band = Band.create({name:"Objects", genre:"rock", explicit_lyrics:false, venue_id:1})
 
