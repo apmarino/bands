@@ -9,10 +9,7 @@ class EventsController < ApplicationController
   end
 
   def create
-<<<<<<< HEAD
-=======
 
->>>>>>> 8511de1082b54516c8f613f57123547ce03c77e9
     params[:remember_me] = true
 
     id = params[:event][:venue_id]
@@ -24,15 +21,10 @@ class EventsController < ApplicationController
     end
 
     if (t.length == 0 )
-<<<<<<< HEAD
+
       Event.create(event_params)
     end
-=======
 
-
-    Event.create(event_params)
-  end
->>>>>>> 8511de1082b54516c8f613f57123547ce03c77e9
     redirect_to events_path
 
 
