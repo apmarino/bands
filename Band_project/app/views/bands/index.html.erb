@@ -1,10 +1,10 @@
-<title>Bands</title>
+<h1>Bands</h1>
 
 
 <% @bands.each do |band| %>
-	<h1> <%= band.name %></h1>
-	<h3>Genre: <%= band.genre %></h3>
-	<h3>Explicit: <%=band.explicit_lyrics %></h3>
+	<h3> <%= band.name %></h3>
+	<h5>Genre: <%= band.genre %></h5>
+	<h5>Explicit: <%=band.explicit_lyrics %></h5>
 	<br><br>
   <a href="/bands/<%= band.id%>/edit">Edit Band</a>
 <%end%>
