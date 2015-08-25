@@ -10,8 +10,21 @@ class EventsController < ApplicationController
   end
 
   def create
+    id = params[:event][:venue_id]
+    venue=Venue.find(id)
+
+    events = venue.events
+    t = events.select do |event|
+      event.date == params[:event][:date]
+    end
+
+    if (t.length == 0 )
+
     Event.create(event_params)
+  end
     redirect_to events_path
+
+  
   end
 
   def show
