@@ -10,7 +10,7 @@ class BandsController < ApplicationController
 
   def create
     Band.create(band_params)
-    redirect_to band_path
+    redirect_to bands_path
   end
 
   def show
@@ -24,13 +24,13 @@ class BandsController < ApplicationController
   def update
     band = Band.find(params[:id])
     band.update(band_params)
-    redirect_to band_path
+    redirect_to bands_path
   end
 
   def destroy
     band = Band.find(params[:id])
     band.destroy
-    redirect_to band_path
+    redirect_to bands_path
   end
 
   private
