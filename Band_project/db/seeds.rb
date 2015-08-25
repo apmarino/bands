@@ -9,10 +9,13 @@
 Event.delete_all
 Band.delete_all
 Venue.delete_all
+<<<<<<< HEAD
 
 venue1 = Venue.create({name:"House of Yes", city:"New York", state:"NY", family_friendly:false})
 venue2 = Venue.create({name:"Barclay Center", city:"New York", state:"NY", family_friendly:false})
 venue3 = Venue.create({name:"Jake's Backyard BBQ", city:"New York", state:"NY", family_friendly:false})
+=======
+>>>>>>> fb4bcc6ae957ceb345e165eeb29d61a1fb05ed8f
 
 band1 = Band.create({name:"Objects", genre:"rock", explicit_lyrics:false, venue_id: venue1.id})
 band2 = Band.create({name:"Pink Floyd", genre:"rock", explicit_lyrics:true, venue_id: venue2.id})
