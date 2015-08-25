@@ -6,10 +6,10 @@ class EventsController < ApplicationController
   
   def new
     @event = Event.new
-     params[:remember_me] = true
   end
 
   def create
+<<<<<<< HEAD
     id = params[:event][:venue_id]
     venue=Venue.find(id)
 
@@ -20,6 +20,9 @@ class EventsController < ApplicationController
 
     if (t.length == 0 )
 
+=======
+    params[:remember_me] = true
+>>>>>>> 0e3724a4813d958cb0a00b51c1b8a65eec52bd91
     Event.create(event_params)
   end
     redirect_to events_path
@@ -45,6 +48,13 @@ class EventsController < ApplicationController
     event = Event.find(params[:id])
     event.destroy
     redirect_to events_path
+  end
+  def search
+    date = params[:date]
+    @search_event = Event.find_by({date: date})
+    
+    render :search
+    
   end
   
   private

@@ -20,13 +20,6 @@
     <ul class="right">
       <li><a href="/events">Events</a>  </li>
       <li><a href="/bands">Bands</a> </li>
-      <!-- <li class="has-dropdown">
-        <a href="#">Create a New...</a>
-        <ul class="dropdown">
-          <li><a href="/bands/new">Band</a></li>
-          <li><a href="/venues/new">Venue</a></li>
-        </ul>
-      </li> -->
     </ul>
 
     <!-- Left Nav Section -->
@@ -34,14 +27,15 @@
       <li> <a href="/venues/new">New Venue</a> </li>
       <li> <a href="/bands/new">New Band</a> </li>
       <li class="has-form">
-        <div class="row collapse">
+        
+        <form action="/search" method="GET" class="row">
           <div class="large-8 small-9 columns">
-            <input type="date" name="date">
+            <input type="date" name="date" id="search">
           </div>
           <div class="large-4 small-3 columns">
-            <a href="#" class="alert button expand">Search</a>
+            <button style="color:white; font-weight:bold">Search</button>
           </div>
-        </div>
+        </form>
       </li>
     </ul>
   </section>
