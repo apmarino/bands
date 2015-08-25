@@ -1,0 +1,12 @@
+<title>Events</title>
+
+<% events.each do |event| %>
+
+<h1>	<%= event.date %></h1>
+<h3>	Alcohol Served:<%= event.alcolhol_served %> </h3>
+	<br>
+	<%	bands.each do |band| %>
+	<h4><%= band.name %></h4>
+	<%end%>
+	<br><br>
+<%end%>

@@ -1,0 +1,9 @@
+<title>Bands</title>
+
+
+<% @bands.each do |band| %>
+	<h1> <%= band.name %></h1>
+	<h3>Genre: <%= band.genre %></h3>
+	<h3>Explicit: <%=band.explicit_lyrics %></h3>
+	<br><br>
+<%end%>
