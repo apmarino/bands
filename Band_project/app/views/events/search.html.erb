@@ -1,0 +1,8 @@
+<% if @search_event%>
+<h3>Date: <%= @search_event.date %></h3>
+<h5>Band: <%= @search_event.band.name %></h5>
+<h5>Venue: <%= @search_event.venue.name %></h5>
+<h5>Alcohol Served: <%= @search_event.alcohol_served %> </h5>
+<%else%>
+<h1>There are no events on this date. Sorry!</h1>
+<%end%>
