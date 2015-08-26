@@ -2,7 +2,7 @@
 
 .content{
   margin: 5% 10%;
-  padding: 5%;
+  padding: 2% 5%;
   font-family: 'Philosopher', sans-serif;
   font-size: 1.7em;
   color: white;
@@ -14,6 +14,7 @@
 }
 .submit:hover{
   background-color: rgb(3, 76, 119);
+  color: rgb(252, 249, 79);
 }
 .check{
   color: white;
@@ -24,17 +25,36 @@
 }
 .value{
   color: rgb(252, 249, 79);
+  font-size: 1.2em;
 }
+
 .up{
   text-transform: uppercase;
 }
+.link{
+  font-size: .8em;
+}
 
+.bands{
+  color: rgb(252, 249, 79);
+}
+.center{
+  vertical-align: center;
+  text-align: center;
+}
+.right{
+  text-align: right;
+  font-size: 1em;
+}
 body{
   background-image: url("http://thenextweb.com/wp-content/blogs.dir/1/files/2013/11/concert-audience.jpg");
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 h1,h2,h3,h4,h5,h6,p{
   color: white;
+  font-family: 'Philosopher', sans-serif;
 }
 a:hover{
   color: plum;

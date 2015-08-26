@@ -1,8 +1,8 @@
 <%= form_for @event do |f| %>
   <%= f.date_field :date%><br>
-  <%= f.label :alcohol_served, "Alcohol Served?"%> 
+  <%= f.label :alcohol_served, "Alcohol Served?", class:"check"%> 
   <%= f.check_box :alcohol_served%> <br>
   <%= f.collection_select :venue_id, Venue.all, :id, :name %>
   <%= f.collection_select :band_id, Band.all, :id, :name %>
-  <%= f.submit %>
+  <%= f.submit class:"submit"%>
 <% end %>

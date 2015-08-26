@@ -1,5 +1,5 @@
-<h3>Date:	<%= @event.date %></h3>
-<h5>Band: <%= @event.band.name %></h5>
-<h5>Venue: <%= @event.venue.name %></h5>
-<h5>Alcohol Served: <%= @event.alcohol_served %> </h5>
-<%= link_to "Edit this", edit_event_path %>
+<h3 class="bands"><%= @event.venue.name %></h3>
+<p>Band: <strong class="value"><%= @event.band.name %></strong></p>
+<p>Date: <strong class="value"><%= @event.date %></strong></p>
+<p>Alcohol Served: <strong class="value"><%= @event.alcohol_served %> </strong></p>
+<p class="link"><%= link_to "Edit this", edit_event_path %></p>

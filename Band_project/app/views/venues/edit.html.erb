@@ -2,7 +2,7 @@
 	<%= f.text_field :name, placeholder: 'Venue Name' %>
 	<%= f.text_field :city, placeholder: 'City' %>
 	<%= f.text_field :state, placeholder: 'State' %>
-	<%= f.text_field :family_friendly, placeholder: 'Family Friendly' %>
-<%= f.submit %>
+	<%= f.text_field :family_friendly, placeholder: 'Family Friendly', class:"check" %>
+<%= f.submit class:"submit"%>
 <%end%>
-<%= link_to "Delete this", venue_path, method: :delete%>
+<p class="link"><%= link_to "Delete this", venue_path, method: :delete%></p>

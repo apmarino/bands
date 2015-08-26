@@ -1,17 +1,14 @@
 
+<h3><strong class="value"><%= @venue.name %></strong></h3>
+<p>Where: <strong class="value"><%= @venue.city %>, <%= @venue.state %></strong></p>
+<p>Family Friendly: <strong class="value"><%= @venue.family_friendly %></strong></p>
+<p class="link"><%= link_to "Edit this", edit_venue_path %>
+<strong class="link right"><%= link_to "Create new Event", new_event_path %></strong></p>
+<br>
+<h4 class="center">Upcoming Event Dates</h4><hr>
 
-<h3>Name:	<%= @venue.name %></h3>
-<h5>Location: <%= @venue.city %>, <%= @venue.state %></h5>
-<h5>Family Friendly: <%= @venue.family_friendly %> </h5>
-<%= link_to "Edit this", edit_venue_path %>
-<br>
-<%= link_to "Create new Event", new_event_path %>
-<br>
-<h5>Upcoming Event Dates:</h5>
-<hr>
 	<% @events.each do |event| %>
-		<%= event.date %>
-		<%= event.band.name%>
-
-		<br><hr>
+		<p><%= event.date %>
+		<strong class="value"><%= event.band.name%></strong></p>
+		<hr>
 	<% end %>

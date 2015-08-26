@@ -3,10 +3,10 @@
 
   <% @venues.each do |venue| %>
 
-    <h3><%= venue.name %></h3>
+    <h3 class="bands"><%= venue.name %></h3>
     <p>Where: <strong class="value"><%= venue.city %>, <%= venue.state %></strong></p>
     <p>Family Friendly: <strong class="value"><%= venue.family_friendly %> </strong></p>
-    <a href="/venues/<%= venue.id %>" class="venue">Venue Info</a><hr>
+    <a href="/venues/<%= venue.id %>" class="venue" class="link">Venue Info</a><hr>
 	
 	<%end%>
 	
