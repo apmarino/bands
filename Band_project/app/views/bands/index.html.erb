@@ -3,8 +3,8 @@
 
 <% @bands.each do |band| %>
 	<h3> <a href="bands/<%=band.id%>"><%= band.name%></a>  </h3>
-	<h5>Genre: <%= band.genre %></h5>
-	<h5>Explicit: <%=band.explicit_lyrics %></h5>
+	<p>Genre: <strong class="value up"><%= band.genre %></strong></p>
+	<p>Explicit: <strong class="value up"><%=band.explicit_lyrics %></strong></p>
   <a href="/bands/<%= band.id%>/edit">Edit Band</a>
   <hr>
 <%end%>

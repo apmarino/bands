@@ -17,6 +17,16 @@
 }
 .check{
   color: white;
+  font-size: .6em;
+}
+.venue{
+  font-size: 0.7em;
+}
+.value{
+  color: rgb(252, 249, 79);
+}
+.up{
+  text-transform: uppercase;
 }
 
 body{

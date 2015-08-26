@@ -1,12 +1,12 @@
 <h1>Venues</h1>
+<hr>
 
-<% @venues.each do |venue| %>
+  <% @venues.each do |venue| %>
 
-<h3>Name:	<%= venue.name %></h3>
-<h5>Location: <%= venue.city %>, <%= venue.state %></h5>
-<h5>Family Friendly: <%= venue.family_friendly %> </h5>
-<a href="/venues/<%= venue.id %>">Venue Info</a>
-	<br>
+    <h3><%= venue.name %></h3>
+    <p>Where: <strong class="value"><%= venue.city %>, <%= venue.state %></strong></p>
+    <p>Family Friendly: <strong class="value"><%= venue.family_friendly %> </strong></p>
+    <a href="/venues/<%= venue.id %>" class="venue">Venue Info</a><hr>
 	
 	<%end%>
-	<br><br>
+	
