@@ -4,8 +4,8 @@
   margin: 5% 10%;
   padding: 2% 5%;
   font-family: 'Philosopher', sans-serif;
-  font-size: 1.7em;
-  color: white;
+  font-size: 1.3em;
+  color: rgb(252, 249, 79);
   background-color: rgba(34,36,42,0.85);
 }
 .submit{
@@ -27,7 +27,15 @@
   color: rgb(252, 249, 79);
   font-size: 1.2em;
 }
-
+select{
+  color: rgb(255,128,0);
+  font-size: 18px;
+  padding: 0 15px;
+}
+/*option{
+  min-height: 0.8em;
+  padding: 0;
+}*/
 .up{
   text-transform: uppercase;
 }

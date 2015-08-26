@@ -2,8 +2,8 @@
   <%= f.date_field :date%>
   <%= f.label :alcohol_served, "Alcohol Served?", class:"check"%> 
   <%= f.check_box :alcohol_served%> <br>
-  <%= f.collection_select :venue_id, Venue.all, :id, :name%>
-  <%= f.collection_select :band_id, Band.all, :id, :name %>
+  <%= f.collection_select :venue_id, Venue.all, :id, :name, id:"select"%>
+  <%= f.collection_select :band_id, Band.all, :id, :name, id:"select" %>
   <%= f.submit class:"submit"%>
 <% end %>
 <%= link_to "Delete this", event_path, method: :delete%>
